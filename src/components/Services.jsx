@@ -2,13 +2,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
+import prevImg from '../assets/generated/preventive_tooth_1790935155077.jpg';
+import restImg from '../assets/generated/restorative_tooth_1790935167532.jpg';
+import cosImg from '../assets/generated/cosmetic_tooth_1790935180819.jpg';
+import orthoImg from '../assets/generated/ortho_tooth_1790935194251.jpg';
+import childImg from '../assets/generated/child_tooth_1790935207908.jpg';
+
 const Services = () => {
   const services = [
-    { title: 'Preventive Care', desc: 'Protect your smile before problems begin with regular dental check-ups, professional cleaning, oral examinations, and personalized preventive care.', img: '/src/assets/generated/preventive_tooth_1790935155077.jpg' },
-    { title: 'Restorative Treatments', desc: 'Restore damaged or decayed teeth with appropriate treatments designed to improve both function and oral health.', img: '/src/assets/generated/restorative_tooth_1790935167532.jpg' },
-    { title: 'Cosmetic Dentistry', desc: 'Enhance the appearance of your smile with personalized cosmetic dental solutions that help you smile with confidence.', img: '/src/assets/generated/cosmetic_tooth_1790935180819.jpg' },
-    { title: 'Orthodontic Solutions', desc: 'Improve the alignment of your teeth and create a healthier, more balanced smile with suitable orthodontic treatment options.', img: '/src/assets/generated/ortho_tooth_1790935194251.jpg' },
-    { title: 'Child Dental Care', desc: 'Gentle and friendly dental care for children, helping them develop healthy oral habits and a positive relationship with dentistry from an early age.', img: '/src/assets/generated/child_tooth_1790935207908.jpg' }
+    { title: 'Preventive Care', desc: 'Protect your smile before problems begin with regular dental check-ups, professional cleaning, oral examinations, and personalized preventive care.', img: prevImg },
+    { title: 'Restorative Treatments', desc: 'Restore damaged or decayed teeth with appropriate treatments designed to improve both function and oral health.', img: restImg },
+    { title: 'Cosmetic Dentistry', desc: 'Enhance the appearance of your smile with personalized cosmetic dental solutions that help you smile with confidence.', img: cosImg },
+    { title: 'Orthodontic Solutions', desc: 'Improve the alignment of your teeth and create a healthier, more balanced smile with suitable orthodontic treatment options.', img: orthoImg },
+    { title: 'Child Dental Care', desc: 'Gentle and friendly dental care for children, helping them develop healthy oral habits and a positive relationship with dentistry from an early age.', img: childImg }
   ];
 
   return (

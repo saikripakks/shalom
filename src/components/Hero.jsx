@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Calendar, Shield, Heart, Award, ArrowRight } from 'lucide-react';
+import heroBg from '../assets/hero.png';
 
 const Hero = () => {
   const stats = [
@@ -40,7 +41,7 @@ const Hero = () => {
             left: 0, 
             right: 0, 
             bottom: 0, 
-            backgroundImage: 'url(/src/assets/hero.png)', 
+            backgroundImage: `url(${heroBg})`, 
             backgroundSize: 'cover', 
             backgroundPosition: 'calc(100% + 300px) center',
             backgroundRepeat: 'no-repeat'

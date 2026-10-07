@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import aboutImg from '../assets/about.png';
 
 const About = () => {
   return (
@@ -58,7 +59,7 @@ const About = () => {
             style={{ position: 'relative', zIndex: 1, width: '300px', height: '300px', borderRadius: '50%', overflow: 'hidden', border: '10px solid var(--color-white)', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
           >
             <img 
-              src="/src/assets/about.png" 
+              src={aboutImg} 
               alt="Dr. Shalom" 
               style={{ width: '100%', height: '100%', objectFit: 'cover' ,}} 
               onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" }}

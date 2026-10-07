@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Heart } from 'lucide-react';
+import premiumToothImg from '../assets/premium-tooth.jpg';
 
 const ImageStory = () => {
   const englishServices = [
@@ -38,7 +39,7 @@ const ImageStory = () => {
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', justifyContent: 'center' }}>
            <motion.img 
              whileHover={{ scale: 1.1, rotate: -5 }}
-             src="/src/assets/premium-tooth.jpg" alt="Healthy Tooth" style={{ width: '80%', maxWidth: '200px', borderRadius: '1rem', mixBlendMode: 'multiply', cursor: 'pointer' }} onError={(e) => e.target.style.display = 'none'} 
+             src={premiumToothImg} alt="Healthy Tooth" style={{ width: '80%', maxWidth: '200px', borderRadius: '1rem', mixBlendMode: 'multiply', cursor: 'pointer' }} onError={(e) => e.target.style.display = 'none'} 
            />
         </div>
 
