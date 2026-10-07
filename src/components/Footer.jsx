@@ -59,10 +59,10 @@ const Footer = () => {
           <h4 style={{ fontSize: '1.2rem', marginBottom: '1.5rem', color: 'var(--color-white)', textTransform: 'uppercase' }}>Contact Us</h4>
           <h5 style={{ color: 'var(--color-accent)', marginBottom: '1rem', fontSize: '1rem' }}>We'd Love to Hear From You</h5>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.6 }}>
-            Have a dental concern or looking for professional advice? Get in touch with Shalom House of Dental Care to schedule your consultation.
+            Have a dental concern or looking for professional advice? Get in touch with Shalom House Of Dental Care to schedule your consultation.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            <p style={{ color: 'var(--color-white)', fontWeight: 600 }}>Shalom House of Dental Care</p>
+            <p style={{ color: 'var(--color-white)', fontWeight: 600 }}>Shalom House Of Dental Care</p>
             <p style={{ color: 'var(--color-accent)', fontWeight: 600, fontSize: '1.1rem' }}>Phone: 8606709290</p>
           </div>
         </div>
@@ -86,7 +86,7 @@ const Footer = () => {
       </div>
       
       <div className="container" style={{ borderTop: '1px solid rgba(255,255,255,0.1)', padding: '1.5rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-        <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)' }}>© 2026 Shalom House of Dental Care. All rights reserved.</p>
+        <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)' }}>© 2026 Shalom House Of Dental Care. All rights reserved.</p>
         <div className="script-text" style={{ fontSize: '1.5rem', color: 'var(--color-white)' }}>
           Smiles for a better tomorrow ♡
         </div>

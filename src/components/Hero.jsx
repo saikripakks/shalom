@@ -74,7 +74,7 @@ const Hero = () => {
             </h1>
             
             <p className="hero-desc" style={{ fontSize: '1.1rem', color: '#113254', marginBottom: '3rem', maxWidth: '520px', fontWeight: 500, lineHeight: 1.6 }}>
-              Welcome to Shalom House of Dental Care, the leading dental clinic in Alappuzha. We believe that dental care is more than treating teeth — it is about caring for people. From routine check-ups to advanced cosmetic dentistry, we provide comfortable, honest, and painless dental treatments tailored for your family's long-term oral health.
+              Welcome to Shalom House Of Dental Care, the leading dental clinic in Alappuzha. We believe that dental care is more than treating teeth — it is about caring for people. From routine check-ups to advanced cosmetic dentistry, we provide comfortable, honest, and painless dental treatments tailored for your family's long-term oral health.
             </p>
             
             {/* Buttons */}
