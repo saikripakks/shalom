@@ -132,11 +132,20 @@ const Hero = () => {
         {/* Right Floating Text */}
         <div className="hero-right" style={{ flex: '0 0 55%', position: 'relative', height: '100%' }}>
           {/* Hand-written text beside dentist */}
-          <motion.div 
-            className="floating-script-container"
-            animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-            style={{ position: 'absolute', top: '35%', right: '5%', transform: 'rotate(-5deg)' }}
-          >
+          <motion.div
+  className="floating-script-container"
+  animate={{ y: [0, -10, 0] }}
+  transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+  style={{
+    position: 'absolute',
+    top: '35%',
+    right: '5%',
+    transform: 'rotate(-5deg)',
+    paddingTop: '250px',
+  }}
+>
+
+
             <span className="script-text floating-script" style={{ fontSize: '3.5rem', color: 'white', textShadow: '2px 2px 10px rgba(0,0,0,0.3)', lineHeight: 1 }}>Your Smile<br/>Matters ♡</span>
           </motion.div>
         </div>
@@ -210,7 +219,7 @@ const Hero = () => {
             
             /* Provide empty space at the bottom for the image to show through */
             .hero-right { flex: 0 0 100% !important; min-height: 480px; width: 100%; }
-            .floating-script-container { top: 15% !important; right: 5% !important; left: auto !important; transform: rotate(-5deg) !important; z-index: 10; }
+            .floating-script-container { top: 25% !important; right: 5% !important; left: auto !important; transform: rotate(-5deg) !important; z-index: 10; }
             .floating-script { font-size: 2.2rem !important; text-shadow: 2px 2px 10px rgba(0,0,0,0.5) !important; }
           }
           @media (max-width: 576px) {
@@ -219,7 +228,7 @@ const Hero = () => {
             .hero-bg-img { background-position: 80% 20% !important; }
             .hero-heading { font-size: 2.8rem !important; }
             .hero-script { font-size: 3.5rem !important; }
-            .floating-script-container { top: 15% !important; right: 2% !important; }
+            .floating-script-container { top: 25% !important; right: 5% !important; }
             .floating-script { font-size: 1.8rem !important; }
           }
         `}
