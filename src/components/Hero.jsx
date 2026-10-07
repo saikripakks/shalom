@@ -177,7 +177,7 @@ const Hero = () => {
           @media (max-width: 1400px) {
             .hero-heading { font-size: 4rem !important; }
             .hero-script { font-size: 5rem !important; margin-top: -1rem !important; }
-            .hero-bg-img { background-position: right center !important; }
+            .hero-bg-img { background-position: 80% 15% !important; }
           }
           @media (max-width: 992px) {
             .hero-section { min-height: auto !important; padding-bottom: 4rem; }
@@ -192,8 +192,11 @@ const Hero = () => {
             .hero-right { flex: 0 0 100% !important; min-height: 250px; width: 100%; }
             .floating-script-container { top: 10% !important; right: auto !important; left: 50% !important; transform: translateX(-50%) rotate(-5deg) !important; }
             .floating-script { font-size: 2.5rem !important; }
-            .hero-bg-img { background-position: center !important; }
+            .hero-bg-img { background-position: 85% 15% !important; }
             .hero-bg-gradient { background: linear-gradient(to bottom, rgba(235, 245, 251, 1) 0%, rgba(235, 245, 251, 0.8) 40%, rgba(255, 255, 255, 0) 100%) !important; }
+          }
+          @media (max-width: 576px) {
+            .hero-bg-img { background-position: 85% 10% !important; }
           }
         `}
       </style>
