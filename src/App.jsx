@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import './index.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
         <Footer />
+        <FloatingWhatsApp phoneNumber="1234567890" message="Hi! I am interested in your services." />
       </div>
     </Router>
   );
