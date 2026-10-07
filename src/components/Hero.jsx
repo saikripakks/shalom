@@ -210,8 +210,8 @@ const Hero = () => {
             
             /* Provide empty space at the bottom for the image to show through */
             .hero-right { flex: 0 0 100% !important; min-height: 480px; width: 100%; }
-            .floating-script-container { top: -30px !important; right: auto !important; left: 50% !important; transform: translateX(-50%) rotate(-5deg) !important; z-index: 10; }
-            .floating-script { font-size: 2.5rem !important; text-shadow: 2px 2px 10px rgba(0,0,0,0.5) !important; }
+            .floating-script-container { top: 15% !important; right: 5% !important; left: auto !important; transform: rotate(-5deg) !important; z-index: 10; }
+            .floating-script { font-size: 2.2rem !important; text-shadow: 2px 2px 10px rgba(0,0,0,0.5) !important; }
           }
           @media (max-width: 576px) {
             .hero-bg-layer { height: 400px !important; }
@@ -219,6 +219,8 @@ const Hero = () => {
             .hero-bg-img { background-position: 80% 20% !important; }
             .hero-heading { font-size: 2.8rem !important; }
             .hero-script { font-size: 3.5rem !important; }
+            .floating-script-container { top: 15% !important; right: 2% !important; }
+            .floating-script { font-size: 1.8rem !important; }
           }
         `}
       </style>
