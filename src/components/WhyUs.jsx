@@ -41,7 +41,7 @@ const WhyUs = () => {
         </div>
 
         {/* Comfortable & Family Blocks */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', marginBottom: '6rem' }}>
+        <div className="comfort-family-blocks" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', marginBottom: '6rem' }}>
           <motion.div whileHover={{ scale: 1.02 }} style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '3rem', borderRadius: '1rem' }}>
             <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>A Comfortable Dental Experience</h3>
             <h4 style={{ color: 'var(--color-accent)', marginBottom: '1rem' }}>We Take the Time to Listen</h4>
@@ -85,9 +85,18 @@ const WhyUs = () => {
       
       <style>
         {`
+          @media (max-width: 992px) {
+            .comfort-family-blocks {
+              grid-template-columns: 1fr !important;
+              gap: 2rem !important;
+            }
+          }
           @media (max-width: 768px) {
             #why-us > .container > div:nth-child(2) {
               grid-template-columns: 1fr !important;
+            }
+            .comfort-family-blocks > div {
+              padding: 2rem !important;
             }
           }
         `}
