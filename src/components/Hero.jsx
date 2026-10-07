@@ -180,30 +180,45 @@ const Hero = () => {
             .hero-bg-img { background-position: 80% 15% !important; }
           }
           @media (max-width: 992px) {
-            .hero-section { min-height: auto !important; padding-bottom: 0rem; background-color: #EBF5FB; }
+            .hero-section { min-height: auto !important; padding-bottom: 0 !important; background-color: #EBF5FB; }
+            
+            /* Restrict the background image strictly to the bottom of the section on mobile */
+            .hero-bg-layer { top: auto !important; bottom: 0 !important; height: 500px !important; }
+            .hero-bg-img { background-position: 80% 20% !important; }
+            .hero-bg-gradient { 
+              display: block !important; 
+              background: linear-gradient(to bottom, #EBF5FB 0%, rgba(235, 245, 251, 0.8) 15%, rgba(255, 255, 255, 0) 40%) !important; 
+            }
+            
             .hero-container { flex-direction: column !important; padding-top: 5rem !important; align-items: center; text-align: center; }
-            .hero-left { flex: 0 0 100% !important; padding-top: 1rem !important; padding-bottom: 1rem !important; max-width: 100% !important; z-index: 10; }
+            .hero-left { flex: 0 0 100% !important; padding-top: 1rem !important; padding-bottom: 2rem !important; max-width: 100% !important; z-index: 10; }
             .hero-title { align-items: center; }
-            .hero-heading { font-size: 3.2rem !important; }
+            .hero-heading { font-size: 3.2rem !important; text-align: center; }
             .hero-script { font-size: 4.5rem !important; margin-top: -0.5rem !important; }
-            .hero-desc { margin: 0 auto 2rem auto !important; }
-            .btn-group { justify-content: center; margin-bottom: 2rem !important; }
-            .hero-icons { justify-content: center; flex-wrap: wrap; gap: 1rem !important; }
+            .hero-desc { margin: 0 auto 2rem auto !important; padding: 0 1rem; }
+            .btn-group { justify-content: center; margin-bottom: 3rem !important; }
             
-            /* Give the right side enough height to show the image */
-            .hero-right { flex: 0 0 100% !important; min-height: 350px; width: 100%; }
-            .floating-script-container { top: 15% !important; right: auto !important; left: 50% !important; transform: translateX(-50%) rotate(-5deg) !important; }
-            .floating-script { font-size: 2.5rem !important; }
+            /* Better 2x2 Grid for Icons */
+            .hero-icons { 
+              display: grid !important; 
+              grid-template-columns: repeat(2, 1fr) !important; 
+              gap: 1.5rem !important; 
+              max-width: 350px;
+              margin: 0 auto;
+            }
+            .hero-icons > div { width: auto !important; }
             
-            /* Move the background image to the bottom so it isn't behind the text */
-            .hero-bg-img { background-size: cover !important; background-position: 80% 10% !important; }
-            
-            /* Fade from solid color at the text area to transparent at the image area */
-            .hero-bg-gradient { background: linear-gradient(to bottom, rgba(235, 245, 251, 1) 0%, rgba(235, 245, 251, 1) 60%, rgba(255, 255, 255, 0) 90%) !important; }
+            /* Provide empty space at the bottom for the image to show through */
+            .hero-right { flex: 0 0 100% !important; min-height: 480px; width: 100%; }
+            .floating-script-container { top: -30px !important; right: auto !important; left: 50% !important; transform: translateX(-50%) rotate(-5deg) !important; z-index: 10; }
+            .floating-script { font-size: 2.5rem !important; text-shadow: 2px 2px 10px rgba(0,0,0,0.5) !important; }
           }
           @media (max-width: 576px) {
-            .hero-bg-img { background-position: 90% 10% !important; }
-            .hero-right { min-height: 300px; }
+            .hero-bg-layer { height: 400px !important; }
+            .hero-right { min-height: 380px !important; }
+            .hero-bg-img { background-position: 80% 20% !important; }
+            .hero-heading { font-size: 2.8rem !important; }
+            .hero-script { font-size: 3.5rem !important; }
           }
         `}
       </style>
