@@ -34,10 +34,10 @@ const Services = () => {
             <div style={{ width: '40px', height: '1px', backgroundColor: 'var(--color-accent)' }}></div>
           </div>
           <h2 style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>
-            Complete Care for Your Smile
+            Complete Dental Care for Your Smile in Alappuzha
           </h2>
           <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', maxWidth: '800px', margin: '0 auto' }}>
-            From preventive check-ups to restorative and cosmetic treatments, we offer comprehensive dental care for children and adults in a comfortable and caring environment.
+            From preventive check-ups and painless root canals to restorative implants and cosmetic teeth whitening, our Alappuzha dental clinic offers comprehensive dental care for children and adults in a highly comfortable environment.
           </p>
         </div>
 

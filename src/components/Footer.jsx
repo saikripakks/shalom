@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
           </motion.div>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>
-            Your journey to a healthier, more confident smile starts here.
+            Your journey to a healthier, more confident smile starts at Alappuzha's premier dental clinic.
           </p>
           <div style={{ display: 'flex', gap: '1rem' }}>
             <a href="#" style={{ width: '32px', height: '32px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', transition: 'var(--transition-smooth)' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--color-white)'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}>

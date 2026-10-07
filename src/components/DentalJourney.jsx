@@ -15,7 +15,7 @@ const DentalJourney = () => {
     <section id="approach" className="section-padding" style={{ backgroundColor: 'var(--color-white)' }}>
       <div className="container">
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-          <h2 style={{ fontSize: '3rem', color: 'var(--color-charcoal)', marginBottom: '1rem' }}>Your Smile Journey</h2>
+          <h2 style={{ fontSize: '3rem', color: 'var(--color-charcoal)', marginBottom: '1rem' }}>Your Smile Journey in Alappuzha</h2>
           <p style={{ fontSize: '1.2rem', color: 'var(--color-gray-dark)' }}>A Simple Approach. A Personal Experience.</p>
         </div>
 

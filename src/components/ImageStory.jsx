@@ -46,7 +46,7 @@ const ImageStory = () => {
         {/* Middle: English List */}
         <div style={{ position: 'relative', zIndex: 1, paddingLeft: '2rem', borderLeft: '1px solid rgba(17, 50, 84, 0.1)' }}>
           <h3 style={{ color: 'var(--color-primary)', fontSize: '1.4rem', marginBottom: '1.5rem', fontWeight: 700, textTransform: 'uppercase' }}>
-            Our Dental Services
+            Our Dental Services in Alappuzha
           </h3>
           <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
             {englishServices.map((item, index) => (
@@ -70,7 +70,7 @@ const ImageStory = () => {
             Healthy, Confident Smiles.
           </h3>
           <p style={{ color: 'var(--color-text-main)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1rem' }}>
-            We are committed to providing dental care that combines clinical expertise with genuine personal attention. Whether you need a routine check-up, treatment, or guidance, we recommend care that is appropriate for you.
+            We are committed to providing top-quality dental care in Alappuzha that combines clinical expertise with genuine personal attention. Whether you need a routine check-up, root canal treatment, or cosmetic guidance, we recommend care that is appropriate for you.
           </p>
           <p style={{ color: 'var(--color-primary)', fontWeight: 700, fontSize: '0.95rem' }}>
             Your comfort matters. Your concerns matter. Your smile matters.

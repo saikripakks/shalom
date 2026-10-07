@@ -32,10 +32,10 @@ const Reviews = () => {
             <div style={{ width: '40px', height: '1px', backgroundColor: 'var(--color-accent)' }}></div>
           </div>
           <h2 style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>
-            What Our Patients Say
+            What Our Patients in Alappuzha Say
           </h2>
           <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', maxWidth: '600px', margin: '0 auto' }}>
-            Real reviews from our Google Maps listing.
+            Real reviews from our Google Maps listing. Discover why we are the top-rated dental clinic in Alappuzha.
           </p>
         </div>
 

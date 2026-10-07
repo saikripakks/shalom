@@ -15,7 +15,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 style={{ fontSize: '2.8rem', marginBottom: '0.5rem', color: 'var(--color-primary)', lineHeight: 1.1 }}>
-            Care Begins With Listening
+            Top Dentist in Alappuzha: Care Begins With Listening
           </h2>
           <h3 style={{ fontSize: '1.2rem', color: 'var(--color-accent)', marginBottom: '1.5rem', fontWeight: 600 }}>
             Dentistry That Starts With Understanding You
@@ -32,7 +32,7 @@ const About = () => {
               Our approach is simple: Listen. Understand. Explain. Care.
             </p>
             <p>
-              As a general dental practice, we focus on providing appropriate, honest, and dependable dental care. When specialised treatment is required, we work with experienced consultants in their respective fields to ensure that patients receive the appropriate expertise for their needs.
+              As a leading general dental practice in Alappuzha, we focus on providing appropriate, honest, and dependable dental care. When specialised treatment is required, we work with experienced consultants in their respective fields to ensure that patients receive the appropriate expertise for their needs.
             </p>
             <p>
               Because dentistry is not simply about treating a tooth.
