@@ -180,23 +180,30 @@ const Hero = () => {
             .hero-bg-img { background-position: 80% 15% !important; }
           }
           @media (max-width: 992px) {
-            .hero-section { min-height: auto !important; padding-bottom: 4rem; }
-            .hero-container { flex-direction: column !important; padding-top: 6rem !important; align-items: center; text-align: center; }
-            .hero-left { flex: 0 0 100% !important; padding-top: 2rem !important; padding-bottom: 2rem !important; max-width: 100% !important; }
+            .hero-section { min-height: auto !important; padding-bottom: 0rem; background-color: #EBF5FB; }
+            .hero-container { flex-direction: column !important; padding-top: 5rem !important; align-items: center; text-align: center; }
+            .hero-left { flex: 0 0 100% !important; padding-top: 1rem !important; padding-bottom: 1rem !important; max-width: 100% !important; z-index: 10; }
             .hero-title { align-items: center; }
-            .hero-heading { font-size: 3rem !important; }
-            .hero-script { font-size: 4rem !important; margin-top: -0.5rem !important; }
+            .hero-heading { font-size: 3.2rem !important; }
+            .hero-script { font-size: 4.5rem !important; margin-top: -0.5rem !important; }
             .hero-desc { margin: 0 auto 2rem auto !important; }
             .btn-group { justify-content: center; margin-bottom: 2rem !important; }
             .hero-icons { justify-content: center; flex-wrap: wrap; gap: 1rem !important; }
-            .hero-right { flex: 0 0 100% !important; min-height: 250px; width: 100%; }
-            .floating-script-container { top: 10% !important; right: auto !important; left: 50% !important; transform: translateX(-50%) rotate(-5deg) !important; }
+            
+            /* Give the right side enough height to show the image */
+            .hero-right { flex: 0 0 100% !important; min-height: 350px; width: 100%; }
+            .floating-script-container { top: 15% !important; right: auto !important; left: 50% !important; transform: translateX(-50%) rotate(-5deg) !important; }
             .floating-script { font-size: 2.5rem !important; }
-            .hero-bg-img { background-position: 85% 15% !important; }
-            .hero-bg-gradient { background: linear-gradient(to bottom, rgba(235, 245, 251, 1) 0%, rgba(235, 245, 251, 0.8) 40%, rgba(255, 255, 255, 0) 100%) !important; }
+            
+            /* Move the background image to the bottom so it isn't behind the text */
+            .hero-bg-img { background-size: cover !important; background-position: 80% 10% !important; }
+            
+            /* Fade from solid color at the text area to transparent at the image area */
+            .hero-bg-gradient { background: linear-gradient(to bottom, rgba(235, 245, 251, 1) 0%, rgba(235, 245, 251, 1) 60%, rgba(255, 255, 255, 0) 90%) !important; }
           }
           @media (max-width: 576px) {
-            .hero-bg-img { background-position: 85% 10% !important; }
+            .hero-bg-img { background-position: 90% 10% !important; }
+            .hero-right { min-height: 300px; }
           }
         `}
       </style>
