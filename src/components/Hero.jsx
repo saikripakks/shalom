@@ -79,19 +79,20 @@ const Hero = () => {
             
             {/* Buttons */}
             <div className="btn-group" style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '4rem' }}>
-              <motion.button 
+              <motion.a 
+                href="tel:8606709290"
                 whileHover={{ scale: 1.05, boxShadow: '0 10px 20px rgba(17,50,84,0.2)' }}
                 whileTap={{ scale: 0.95 }}
                 className="btn interactive" style={{ 
                 backgroundColor: '#113254', color: 'white', padding: '0.4rem 0.4rem 0.4rem 1.5rem', 
-                borderRadius: '50px', display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.95rem', fontWeight: 600, border: 'none'
+                borderRadius: '50px', display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.95rem', fontWeight: 600, border: 'none', textDecoration: 'none'
               }}>
                 <Calendar size={18} /> 
                 Book an Appointment 
                 <div style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: 'white', color: '#113254', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <ArrowRight size={16} strokeWidth={2.5} />
                 </div>
-              </motion.button>
+              </motion.a>
               
               <motion.button 
                 whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.9)' }}

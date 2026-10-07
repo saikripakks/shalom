@@ -67,9 +67,13 @@ const WhyUs = () => {
           </p>
           
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
-            <motion.button whileHover={{ scale: 1.05 }} style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '1rem 2rem', borderRadius: '50px', border: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer' }}>
+            <motion.a 
+              href="tel:8606709290"
+              whileHover={{ scale: 1.05 }} 
+              style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '1rem 2rem', borderRadius: '50px', border: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', textDecoration: 'none' }}
+            >
               <Calendar size={18} /> Book your consultation today
-            </motion.button>
+            </motion.a>
           </div>
           
           <div style={{ borderTop: '1px solid rgba(17,50,84,0.1)', paddingTop: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

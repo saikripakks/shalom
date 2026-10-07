@@ -63,10 +63,10 @@ const Navbar = () => {
         </nav>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-          <button className="btn btn-primary desktop-btn">
+          <a href="tel:8606709290" className="btn btn-primary desktop-btn" style={{ textDecoration: 'none' }}>
             <Calendar size={18} />
             Book an Appointment
-          </button>
+          </a>
           
           <a href="tel:8606709290" className="phone-btn">
             <Phone size={22} fill="var(--color-primary)" />
