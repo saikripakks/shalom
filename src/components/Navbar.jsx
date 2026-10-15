@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Calendar, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from './Logo';
@@ -15,7 +16,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = ['Home', 'About', 'Services', 'Why Us', 'Contact'];
+  const navLinks = ['Home', 'About', 'Services', 'Why Us', 'FAQ', 'Contact'];
 
   return (
     <>
@@ -35,19 +36,21 @@ const Navbar = () => {
           alignItems: 'center'
         }}
       >
-        <motion.div whileHover={{ scale: 1.05 }} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
-          <Logo style={{ height: '45px', width: '45px' }} />
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{ color: 'var(--color-primary)', fontSize: '1.6rem', fontWeight: 800, lineHeight: 1.1, letterSpacing: '0.02em' }}>SHALOM</span>
-            <span style={{ fontSize: '0.75rem', color: 'var(--color-primary)', fontWeight: 600, letterSpacing: '0.05em' }}>HOUSE OF DENTAL CARE</span>
-          </div>
-        </motion.div>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <motion.div whileHover={{ scale: 1.05 }} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+            <Logo style={{ height: '45px', width: '45px' }} />
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <span style={{ color: 'var(--color-primary)', fontSize: '1.6rem', fontWeight: 800, lineHeight: 1.1, letterSpacing: '0.02em' }}>SHALOM</span>
+              <span style={{ fontSize: '0.75rem', color: 'var(--color-primary)', fontWeight: 600, letterSpacing: '0.05em' }}>HOUSE OF DENTAL CARE</span>
+            </div>
+          </motion.div>
+        </Link>
 
         <nav style={{ display: 'none', gap: '2rem', alignItems: 'center' }} className="desktop-nav">
           <ul style={{ display: 'flex', gap: '2.5rem', listStyle: 'none', margin: 0, padding: 0 }}>
             {navLinks.map((link, index) => (
               <motion.li key={link} whileHover={{ y: -2 }}>
-                <a href={`#${link.toLowerCase().replace(' ', '-')}`} style={{ 
+                <a href={link === 'Home' ? '/' : `/#${link.toLowerCase().replace(' ', '-')}`} style={{ 
                   fontSize: '0.95rem', 
                   fontWeight: index === 0 ? 700 : 500, 
                   color: index === 0 ? 'var(--color-primary)' : 'var(--color-text-main)',
@@ -125,7 +128,7 @@ const Navbar = () => {
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link}
-                  href={`#${link.toLowerCase().replace(' ', '-')}`}
+                  href={link === 'Home' ? '/' : `/#${link.toLowerCase().replace(' ', '-')}`}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 * i }}

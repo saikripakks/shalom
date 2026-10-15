@@ -37,10 +37,25 @@ const ImageStory = () => {
 
         {/* Left: Tooth Image */}
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', justifyContent: 'center' }}>
-           <motion.img 
-             whileHover={{ scale: 1.1, rotate: -5 }}
-             src={premiumToothImg} alt="Healthy Tooth" style={{ width: '80%', maxWidth: '200px', borderRadius: '1rem', mixBlendMode: 'multiply', cursor: 'pointer' }} onError={(e) => e.target.style.display = 'none'} 
-           />
+          <motion.div 
+            whileHover={{ scale: 1.05, rotate: -2 }}
+            style={{ 
+              width: '210px', 
+              height: '210px', 
+              borderRadius: '1.5rem', 
+              overflow: 'hidden', 
+              boxShadow: '0 15px 35px rgba(17, 50, 84, 0.12)',
+              border: '5px solid var(--color-white)',
+              cursor: 'pointer'
+            }}
+          >
+            <img 
+              src={premiumToothImg} 
+              alt="Healthy Tooth and Professional Care at Shalom House of Dental Care" 
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              onError={(e) => e.target.style.display = 'none'} 
+            />
+          </motion.div>
         </div>
 
         {/* Middle: English List */}

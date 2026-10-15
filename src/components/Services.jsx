@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
@@ -10,11 +11,11 @@ import childImg from '../assets/generated/child_tooth_1790935207908.jpg';
 
 const Services = () => {
   const services = [
-    { title: 'Preventive Care', desc: 'Protect your smile before problems begin with regular dental check-ups, professional cleaning, oral examinations, and personalized preventive care.', img: prevImg },
-    { title: 'Restorative Treatments', desc: 'Restore damaged or decayed teeth with appropriate treatments designed to improve both function and oral health.', img: restImg },
-    { title: 'Cosmetic Dentistry', desc: 'Enhance the appearance of your smile with personalized cosmetic dental solutions that help you smile with confidence.', img: cosImg },
-    { title: 'Orthodontic Solutions', desc: 'Improve the alignment of your teeth and create a healthier, more balanced smile with suitable orthodontic treatment options.', img: orthoImg },
-    { title: 'Child Dental Care', desc: 'Gentle and friendly dental care for children, helping them develop healthy oral habits and a positive relationship with dentistry from an early age.', img: childImg }
+    { title: 'Preventive Care', desc: 'Protect your smile before problems begin with regular dental check-ups, professional cleaning, oral examinations, and personalized preventive care.', img: prevImg, link: '/dental-checkup-cleaning-alappuzha' },
+    { title: 'Restorative Treatments', desc: 'Restore damaged or decayed teeth with root canals, dental implants, crowns, and fillings designed to improve health and function.', img: restImg, link: '/root-canal-treatment-alappuzha' },
+    { title: 'Cosmetic Dentistry', desc: 'Enhance the appearance of your smile with personalized teeth whitening, aesthetic bonding, and veneers to smile with confidence.', img: cosImg, link: '/teeth-whitening-alappuzha' },
+    { title: 'Orthodontic Solutions', desc: 'Improve the alignment of your teeth and correct bite problems with modern braces and orthodontic treatment options.', img: orthoImg, link: '/braces-orthodontics-alappuzha' },
+    { title: 'Child Dental Care', desc: 'Gentle and friendly dental care for children, helping them develop healthy oral habits and a positive relationship with dentistry from an early age.', img: childImg, link: '/child-dentist-alappuzha' }
   ];
 
   return (
@@ -43,41 +44,47 @@ const Services = () => {
 
         <div className="services-grid" style={{ display: 'grid', gap: '1.5rem' }}>
           {services.map((service, index) => (
-            <motion.div
-              key={index}
-              className="interactive"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -10, scale: 1.02, boxShadow: '0 20px 40px rgba(17, 50, 84, 0.08)' }}
-              style={{
-                backgroundColor: 'var(--color-white)',
-                padding: '2.5rem 1.5rem',
-                borderRadius: '1.5rem',
-                border: '1px solid var(--color-bg-blue)',
-                boxShadow: '0 10px 30px rgba(17, 50, 84, 0.03)',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                textAlign: 'center',
-                position: 'relative',
-                transition: 'var(--transition-smooth)',
-                cursor: 'pointer'
-              }}
+            <Link 
+              key={index} 
+              to={service.link} 
+              style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}
             >
-              {/* Using specific images for each service */}
-              <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'linear-gradient(135deg, #E2F0F9 0%, #FFFFFF 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem', overflow: 'hidden', border: '3px solid var(--color-bg-light)', boxShadow: 'inset 0 4px 10px rgba(0,0,0,0.1)' }}>
-                 <img src={service.img} alt={service.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => { e.target.style.display = 'none'; }} />
-              </div>
-              
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>{service.title}</h3>
-              <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem', marginBottom: '2rem', flex: 1 }}>{service.desc}</p>
-              
-              <div style={{ width: '36px', height: '36px', borderRadius: '50%', border: '1px solid var(--color-bg-blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
-                <ArrowRight size={16} />
-              </div>
-            </motion.div>
+              <motion.div
+                className="interactive group"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -10, scale: 1.02, boxShadow: '0 20px 40px rgba(17, 50, 84, 0.08)' }}
+                style={{
+                  backgroundColor: 'var(--color-white)',
+                  padding: '2.5rem 1.5rem',
+                  borderRadius: '1.5rem',
+                  border: '1px solid var(--color-bg-blue)',
+                  boxShadow: '0 10px 30px rgba(17, 50, 84, 0.03)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  textAlign: 'center',
+                  position: 'relative',
+                  transition: 'var(--transition-smooth)',
+                  cursor: 'pointer',
+                  height: '100%'
+                }}
+              >
+                {/* Using specific images for each service */}
+                <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'linear-gradient(135deg, #E2F0F9 0%, #FFFFFF 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem', overflow: 'hidden', border: '3px solid var(--color-bg-light)', boxShadow: 'inset 0 4px 10px rgba(0,0,0,0.1)' }}>
+                   <img src={service.img} alt={service.title} className="transition-transform duration-700 ease-out group-hover:scale-110" style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => { e.target.style.display = 'none'; }} />
+                </div>
+                
+                <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>{service.title}</h3>
+                <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem', marginBottom: '2rem', flex: 1 }}>{service.desc}</p>
+                
+                <div style={{ width: '36px', height: '36px', borderRadius: '50%', border: '1px solid var(--color-bg-blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
+                  <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-rotate-45" />
+                </div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>

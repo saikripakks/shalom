@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Phone, Calendar, Heart, Shield, Users, Smile } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
+import clinicInteriorImg from '../assets/clinic-modern-interior.jpg';
+import familyDentalImg from '../assets/family-dental-care.jpg';
 
 const WhyUs = () => {
   const reasons = [
@@ -42,19 +45,60 @@ const WhyUs = () => {
 
         {/* Comfortable & Family Blocks */}
         <div className="comfort-family-blocks" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', marginBottom: '6rem' }}>
-          <motion.div whileHover={{ scale: 1.02 }} style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '3rem', borderRadius: '1rem' }}>
-            <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>A Comfortable Dental Experience</h3>
-            <h4 style={{ color: 'var(--color-accent)', marginBottom: '1rem' }}>We Take the Time to Listen</h4>
-            <p style={{ opacity: 0.9, marginBottom: '1rem' }}>Visiting a dentist should not feel overwhelming.</p>
-            <p style={{ opacity: 0.9, marginBottom: '1rem' }}>We believe in creating an environment where you can openly discuss your concerns, understand your treatment, and feel confident about the care you receive.</p>
-            <p style={{ opacity: 0.9 }}>From your first consultation to your follow-up visits, our goal is to make your dental experience comfortable, transparent, and reassuring.</p>
+          <motion.div 
+            whileHover={{ y: -6 }} 
+            style={{ 
+              backgroundColor: 'var(--color-primary)', 
+              color: 'white', 
+              borderRadius: '1.5rem', 
+              overflow: 'hidden', 
+              boxShadow: '0 20px 40px rgba(17, 50, 84, 0.12)',
+              display: 'flex',
+              flexDirection: 'column'
+            }}
+          >
+            <div style={{ height: '230px', width: '100%', overflow: 'hidden' }}>
+              <img 
+                src={clinicInteriorImg} 
+                alt="Modern, tranquil dental operatory at Shalom House of Dental Care" 
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              />
+            </div>
+            <div style={{ padding: '2.5rem' }}>
+              <h3 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>A Comfortable Dental Experience</h3>
+              <h4 style={{ color: 'var(--color-accent)', marginBottom: '1rem', fontSize: '1.1rem' }}>We Take the Time to Listen</h4>
+              <p style={{ opacity: 0.9, marginBottom: '1rem', lineHeight: 1.7 }}>Visiting a dentist should never feel overwhelming.</p>
+              <p style={{ opacity: 0.9, marginBottom: '1rem', lineHeight: 1.7 }}>We believe in creating a serene, modern environment where you can openly discuss your concerns, understand your treatment, and feel confident about the care you receive.</p>
+              <p style={{ opacity: 0.9, lineHeight: 1.7 }}>From your first consultation to your follow-up visits, our goal is to make your dental experience comfortable, transparent, and reassuring.</p>
+            </div>
           </motion.div>
           
-          <motion.div whileHover={{ scale: 1.02 }} style={{ backgroundColor: 'var(--color-white)', border: '2px solid var(--color-bg-blue)', padding: '3rem', borderRadius: '1rem' }}>
-            <h3 style={{ fontSize: '1.8rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>For You and Your Family</h3>
-            <h4 style={{ color: 'var(--color-accent)', marginBottom: '1rem' }}>Dental Care at Every Stage of Life</h4>
-            <p style={{ color: 'var(--color-text-main)', marginBottom: '1rem' }}>Healthy dental habits begin early and continue throughout life.</p>
-            <p style={{ color: 'var(--color-text-main)' }}>Whether it is your child's first dental visit, a routine check-up, treatment for a damaged tooth, or improving the appearance of your smile, we are here to support your oral health with personalised care.</p>
+          <motion.div 
+            whileHover={{ y: -6 }} 
+            style={{ 
+              backgroundColor: 'var(--color-white)', 
+              border: '2px solid var(--color-bg-blue)', 
+              borderRadius: '1.5rem', 
+              overflow: 'hidden', 
+              boxShadow: '0 20px 40px rgba(17, 50, 84, 0.06)',
+              display: 'flex',
+              flexDirection: 'column'
+            }}
+          >
+            <div style={{ height: '230px', width: '100%', overflow: 'hidden' }}>
+              <img 
+                src={familyDentalImg} 
+                alt="Smiling family receiving dental care at Shalom House of Dental Care" 
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              />
+            </div>
+            <div style={{ padding: '2.5rem' }}>
+              <h3 style={{ fontSize: '1.8rem', color: 'var(--color-primary)', marginBottom: '0.5rem' }}>For You and Your Family</h3>
+              <h4 style={{ color: 'var(--color-accent)', marginBottom: '1rem', fontSize: '1.1rem' }}>Dental Care at Every Stage of Life</h4>
+              <p style={{ color: 'var(--color-text-main)', marginBottom: '1rem', lineHeight: 1.7 }}>Healthy dental habits begin early and continue throughout life.</p>
+              <p style={{ color: 'var(--color-text-main)', marginBottom: '1rem', lineHeight: 1.7 }}>Whether it is your child's first dental visit, a routine check-up, treatment for a damaged tooth, or improving the appearance of your smile, we are here to support your oral health with personalised care.</p>
+              <p style={{ color: 'var(--color-text-main)', lineHeight: 1.7 }}>We treat patients of all generations with genuine patience, gentleness, and respect.</p>
+            </div>
           </motion.div>
         </div>
 
@@ -79,8 +123,13 @@ const WhyUs = () => {
           <div style={{ borderTop: '1px solid rgba(17,50,84,0.1)', paddingTop: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <h3 style={{ fontSize: '1.5rem', color: 'var(--color-primary)', marginBottom: '0.5rem' }}>SHALOM HOUSE OF DENTAL CARE</h3>
             <p style={{ color: 'var(--color-accent)', fontWeight: 600, marginBottom: '1rem' }}>Healthy Smiles. Confident You.</p>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.2rem', color: 'var(--color-primary)', fontWeight: 700 }}>
-              <Phone size={20} fill="currentColor" /> 8606709290
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+              <a href="tel:+918606709290" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.2rem', color: 'var(--color-primary)', fontWeight: 700, textDecoration: 'none' }}>
+                <Phone size={20} fill="currentColor" /> 8606709290
+              </a>
+              <a href="https://wa.me/918606709290?text=Hi%21%20I%20would%20like%20to%20book%20a%20dental%20appointment." target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1rem', color: '#25D366', fontWeight: 700, textDecoration: 'none' }}>
+                <FaWhatsapp size={20} /> WhatsApp
+              </a>
             </div>
           </div>
         </div>

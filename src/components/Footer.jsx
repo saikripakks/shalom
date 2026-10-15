@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Phone } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import Logo from './Logo';
 
 const Footer = () => {
-  const navLinks = ['Home', 'About', 'Services', 'Why Us', 'Contact'];
+  const navLinks = ['Home', 'About', 'Services', 'Why Us', 'FAQ', 'Contact'];
 
   return (
     <footer style={{ backgroundColor: 'var(--color-primary)', color: 'var(--color-white)', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
@@ -11,13 +14,15 @@ const Footer = () => {
         
         {/* Left: Logo and Info */}
         <div>
-          <motion.div whileHover={{ scale: 1.05 }} style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', cursor: 'pointer', marginBottom: '1.5rem' }}>
-            <Logo style={{ height: '40px', width: '40px' }} variant="light" />
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontSize: '1.4rem', fontWeight: 800, lineHeight: 1.1, letterSpacing: '0.02em', color: 'var(--color-white)' }}>SHALOM</span>
-              <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.8)', fontWeight: 600, letterSpacing: '0.05em' }}>HOUSE OF DENTAL CARE</span>
-            </div>
-          </motion.div>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <motion.div whileHover={{ scale: 1.05 }} style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', cursor: 'pointer', marginBottom: '1.5rem' }}>
+              <Logo style={{ height: '40px', width: '40px' }} variant="light" />
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <span style={{ fontSize: '1.4rem', fontWeight: 800, lineHeight: 1.1, letterSpacing: '0.02em', color: 'var(--color-white)' }}>SHALOM</span>
+                <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.8)', fontWeight: 600, letterSpacing: '0.05em' }}>HOUSE OF DENTAL CARE</span>
+              </div>
+            </motion.div>
+          </Link>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>
             Your journey to a healthier, more confident smile starts at Alappuzha's premier dental clinic.
           </p>
@@ -45,7 +50,7 @@ const Footer = () => {
               <motion.a 
                 key={link} 
                 whileHover={{ x: 5, color: 'var(--color-accent)' }}
-                href={`#${link.toLowerCase().replace(' ', '-')}`} 
+                href={link === 'Home' ? '/' : `/#${link.toLowerCase().replace(' ', '-')}`} 
                 style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.8)', fontWeight: 500, display: 'inline-block' }} 
               >
                 {link}
@@ -58,12 +63,25 @@ const Footer = () => {
         <div>
           <h4 style={{ fontSize: '1.2rem', marginBottom: '1.5rem', color: 'var(--color-white)', textTransform: 'uppercase' }}>Contact Us</h4>
           <h5 style={{ color: 'var(--color-accent)', marginBottom: '1rem', fontSize: '1rem' }}>We'd Love to Hear From You</h5>
-          <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.6 }}>
-            Have a dental concern or looking for professional advice? Get in touch with Shalom House Of Dental Care to schedule your consultation.
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
             <p style={{ color: 'var(--color-white)', fontWeight: 600 }}>Shalom House Of Dental Care</p>
-            <p style={{ color: 'var(--color-accent)', fontWeight: 600, fontSize: '1.1rem' }}>Phone: 8606709290</p>
+            <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.88rem', lineHeight: 1.6 }}>
+              Civil Station Ward, General Hospital Road,<br />
+              East of Amman Kovil Temple,<br />
+              Alappuzha, Kerala – 688001
+            </p>
+            <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem' }}>
+              Near Civil Station · Near General Hospital · Alappuzha Town
+            </p>
+            <a href="tel:+918606709290" style={{ color: 'var(--color-accent)', fontWeight: 700, fontSize: '1.1rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+              <Phone size={18} fill="currentColor" /> 8606709290
+            </a>
+            <a href="https://wa.me/918606709290?text=Hi%21%20I%20would%20like%20to%20book%20a%20dental%20appointment." target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+              <FaWhatsapp size={20} /> WhatsApp Us
+            </a>
+            <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem' }}>
+              Mon – Sat: 9:00 AM – 6:00 PM
+            </p>
           </div>
         </div>
 

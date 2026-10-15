@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import aboutImg from '../assets/about.png';
+import aboutImg from '../assets/about-smile.png';
 
 const About = () => {
   return (
@@ -60,9 +60,9 @@ const About = () => {
           >
             <img 
               src={aboutImg} 
-              alt="Dr. Shalom" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover' ,}} 
-              onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" }}
+              alt="Healthy, confident smile at Shalom House of Dental Care, Alappuzha" 
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+
             />
           </motion.div>
 

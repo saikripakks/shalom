@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Calendar, Shield, Heart, Award, ArrowRight } from 'lucide-react';
+import { Phone, Calendar, Shield, Heart, Award, ArrowRight, Sparkles } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import heroBg from '../assets/hero.webp';
 
 const Hero = () => {
@@ -47,6 +48,14 @@ const Hero = () => {
             backgroundRepeat: 'no-repeat'
           }} 
         />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute right-[12%] top-[12%] hidden size-64 rounded-full bg-sky-300/25 blur-3xl motion-safe:animate-soft-glow lg:block"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute bottom-[18%] right-[38%] hidden size-24 rounded-full border border-white/50 bg-white/20 blur-sm motion-safe:animate-float lg:block"
+        />
         {/* Soft white/blue gradient masking the left side */}
        
       </div>
@@ -57,6 +66,15 @@ const Hero = () => {
         <div className="hero-left" style={{ flex: '0 0 50%', maxWidth: '600px', paddingTop: '4rem', paddingBottom: '8rem' }}>
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-200/80 bg-white/75 px-4 py-2 text-xs font-bold uppercase tracking-[0.12em] text-primary shadow-lg shadow-primary/5 backdrop-blur-sm">
+              <span className="relative flex size-2">
+                <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent/60 motion-reduce:animate-none" />
+                <span className="relative inline-flex size-2 rounded-full bg-accent" />
+              </span>
+              Gentle, family-first dental care
+              <Sparkles size={14} className="text-accent motion-safe:animate-pulse" />
+            </div>
+
             <p className="hero-subtitle" style={{ color: '#4A8BB5', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '1.2rem' }}>
               BEST DENTAL CLINIC IN ALAPPUZHA FOR EVERY SMILE
             </p>
@@ -87,15 +105,30 @@ const Hero = () => {
                 </div>
               </motion.a>
               
-              <motion.button 
+              <motion.a
+                href="tel:+918606709290"
                 whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.9)' }}
                 whileTap={{ scale: 0.95 }}
                 className="btn interactive" style={{ 
                 backgroundColor: 'white', color: '#113254', padding: '0.8rem 1.8rem', 
-                borderRadius: '50px', display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '0.95rem', fontWeight: 600, border: '1px solid #4A8BB5'
+                borderRadius: '50px', display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '0.95rem', fontWeight: 600, border: '1px solid #4A8BB5', textDecoration: 'none'
               }}>
                 <Phone size={18} fill="#113254" color="#113254" /> Call 8606709290
-              </motion.button>
+              </motion.a>
+
+              <motion.a
+                href="https://wa.me/918606709290?text=Hi%21%20I%20would%20like%20to%20book%20a%20dental%20appointment."
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05, backgroundColor: '#20BA5C' }}
+                whileTap={{ scale: 0.95 }}
+                className="btn interactive" style={{ 
+                backgroundColor: '#25D366', color: 'white', padding: '0.8rem 1.8rem', 
+                borderRadius: '50px', display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '0.95rem', fontWeight: 600, border: 'none', textDecoration: 'none'
+              }}>
+                <FaWhatsapp size={20} /> WhatsApp Us
+              </motion.a>
+
             </div>
 
             {/* Icons Grid */}

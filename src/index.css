@@ -1,4 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Dancing+Script:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-script: 'Dancing Script', cursive;
+  --color-primary: #113254;
+  --color-sky-soft: #e2f0f9;
+  --color-accent: #cd9c56;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-soft-glow: soft-glow 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+  }
+
+  @keyframes soft-glow {
+    0%, 100% { opacity: 0.45; transform: scale(0.96); }
+    50% { opacity: 0.8; transform: scale(1.04); }
+  }
+
+}
 
 :root {
   --color-primary: #113254; /* Dark blue for buttons/footer */
