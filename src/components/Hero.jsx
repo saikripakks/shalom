@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Calendar, Shield, Heart, Award, ArrowRight } from 'lucide-react';
-import heroBg from '../assets/hero.png';
+import heroBg from '../assets/hero.webp';
 
 const Hero = () => {
   const stats = [
