@@ -43,19 +43,12 @@ const Hero = () => {
             bottom: 0, 
             backgroundImage: `url(${heroBg})`, 
             backgroundSize: 'cover', 
-            backgroundPosition: 'calc(100% + 300px) center',
+            backgroundPosition: 'calc(100% + 600px) center',
             backgroundRepeat: 'no-repeat'
           }} 
         />
         {/* Soft white/blue gradient masking the left side */}
-        <div 
-          className="hero-bg-gradient"
-          style={{ 
-            position: 'absolute', 
-            top: 0, left: 0, width: '100%', height: '100%', 
-            background: 'linear-gradient(to right, rgba(235, 245, 251, 1) 0%, rgba(235, 245, 251, 1) 40%, rgba(235, 245, 251, 0.4) 65%, rgba(255, 255, 255, 0) 100%)' 
-          }} 
-        />
+       
       </div>
 
       <div className="container hero-container" style={{ position: 'relative', zIndex: 2, display: 'flex', height: '100%', paddingTop: '6rem' }}>
