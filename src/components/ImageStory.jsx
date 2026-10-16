@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2, Heart } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import premiumToothImg from '../assets/premium-tooth.jpg';
 
 const ImageStory = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Award } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import doctorImg from '../assets/dr.webp';
 
 export default function MeetDentist() {

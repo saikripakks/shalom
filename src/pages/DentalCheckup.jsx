@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, CheckCircle, Calendar } from 'lucide-react';
+import { Phone, CheckCircle } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const DentalCheckup = () => {
