@@ -25,7 +25,7 @@ const ChildDentist = () => {
             Child Dentist in Alappuzha
           </h1>
           <p style={{ fontSize: '1.1rem', opacity: 0.85, maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
-            Growing healthy smiles together.
+            Growing Healthy Smiles Together.
           </p>
           <a
             href="tel:+918606709290"

@@ -71,13 +71,9 @@ const Hero = () => {
                 <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent/60 motion-reduce:animate-none" />
                 <span className="relative inline-flex size-2 rounded-full bg-accent" />
               </span>
-              Care for every smile
+              Care for Every Smile
               <Sparkles size={14} className="text-accent motion-safe:animate-pulse" />
             </div>
-
-            <p className="hero-subtitle" style={{ color: '#4A8BB5', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '1.2rem' }}>
-              BEST DENTAL CLINIC IN ALAPPUZHA
-            </p>
             
             <h1 className="hero-title" style={{ color: '#113254', lineHeight: 1, marginBottom: '1.5rem', display: 'flex', flexDirection: 'column' }}>
               <span className="hero-heading" style={{ fontSize: '4.5rem', fontWeight: 800 }}>Healthy Smiles.</span>
@@ -85,7 +81,7 @@ const Hero = () => {
             </h1>
             
             <p className="hero-desc" style={{ fontSize: '1.1rem', color: '#113254', marginBottom: '3rem', maxWidth: '520px', fontWeight: 500, lineHeight: 1.6 }}>
-              Welcome to Shalom House Of Dental Care, the leading dental clinic in Alappuzha. We believe that dental care is more than treating teeth — it is about caring for people. From routine check-ups to advanced cosmetic dentistry, we provide comfortable, honest, and painless dental treatments tailored for your family's long-term oral health.
+              Welcome to Shalom House of Dental Care. We believe that dental care is more than treating teeth — it is about caring for people. From routine check-ups and Comfort-Focused RCT to smile enhancement, we provide honest, personalized care recommended only when you need it.
             </p>
             
             {/* Buttons */}

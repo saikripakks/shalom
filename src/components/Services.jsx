@@ -11,11 +11,11 @@ import childImg from '../assets/generated/child_tooth_1790935207908.jpg';
 
 const Services = () => {
   const services = [
-    { title: 'Preventive Care', desc: 'Protect your smile before problems begin with regular dental check-ups, professional cleaning, oral examinations, and personalized preventive care.', img: prevImg, link: '/dental-checkup-cleaning-alappuzha' },
-    { title: 'Restorative Treatments', desc: 'Restore damaged or decayed teeth with root canals, dental implants, crowns, and fillings designed to improve health and function.', img: restImg, link: '/root-canal-treatment-alappuzha' },
-    { title: 'Cosmetic Dentistry', desc: 'Enhance the appearance of your smile with personalized teeth whitening, aesthetic bonding, and veneers to smile with confidence.', img: cosImg, link: '/teeth-whitening-alappuzha' },
+    { title: 'Preventive Care', desc: 'Protect your smile before problems begin with regular dental check-ups, professional cleaning, and comprehensive examinations.', img: prevImg, link: '/dental-checkup-cleaning-alappuzha' },
+    { title: 'Restorative Care', desc: 'Restore damaged or decayed teeth with Comfort-Focused RCT, dental implants, crowns, and tooth-coloured fillings.', img: restImg, link: '/root-canal-treatment-alappuzha' },
+    { title: 'Smile Enhancement', desc: 'Smile enhancement using aesthetic bonding, veneers, and teeth whitening.', img: cosImg, link: '/teeth-whitening-alappuzha' },
     { title: 'Orthodontic Solutions', desc: 'Improve the alignment of your teeth and correct bite problems with modern braces and orthodontic treatment options.', img: orthoImg, link: '/braces-orthodontics-alappuzha' },
-    { title: 'Child Dental Care', desc: 'Growing healthy smiles together.', img: childImg, link: '/child-dentist-alappuzha' }
+    { title: 'Pediatric Dentistry', desc: 'Growing Healthy Smiles Together.', img: childImg, link: '/child-dentist-alappuzha' }
   ];
 
   return (
@@ -38,7 +38,7 @@ const Services = () => {
             Complete Dental Care for Your Smile in Alappuzha
           </h2>
           <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', maxWidth: '800px', margin: '0 auto' }}>
-            From preventive check-ups and comfort-focused root canal treatment to restorative implants and cosmetic teeth whitening, our Alappuzha dental clinic offers comprehensive dental care for children and adults in a highly comfortable environment.
+            From preventive check-ups and Comfort-Focused RCT to restorative implants and smile enhancement, our clinic offers comprehensive dental care for children and adults in a comfortable environment.
           </p>
         </div>
 

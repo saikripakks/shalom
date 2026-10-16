@@ -107,7 +107,7 @@ const WhyUs = () => {
           <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '0.5rem' }}>Your Smile Deserves Care</h2>
           <p style={{ fontSize: '1.2rem', color: 'var(--color-accent)', fontWeight: 600, marginBottom: '1.5rem' }}>Take the First Step Toward Better Oral Health</p>
           <p style={{ maxWidth: '600px', margin: '0 auto 2rem', color: 'var(--color-text-main)' }}>
-            As a top-rated dentist in Alappuzha, we ensure that every visit is stress-free. Don't wait until a dental problem becomes uncomfortable. Regular dental check-ups and cleanings help maintain healthy teeth and allow potential problems like cavities or gum disease to be identified early.
+            At Shalom House of Dental Care, we ensure that every visit is comfortable and reassuring. Don't wait until a dental problem becomes uncomfortable. Regular dental check-ups and cleanings help maintain healthy teeth and allow potential problems like cavities or gum disease to be identified early.
           </p>
           
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '3rem' }}>

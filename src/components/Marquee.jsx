@@ -4,9 +4,9 @@ const Marquee = () => {
   const items = [
     "PREVENTIVE CARE",
     "RESTORATIVE DENTISTRY",
-    "COSMETIC DENTISTRY",
+    "SMILE ENHANCEMENT",
     "ORTHODONTICS",
-    "CHILD DENTAL CARE"
+    "PEDIATRIC DENTISTRY"
   ];
 
   return (

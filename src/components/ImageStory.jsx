@@ -6,10 +6,10 @@ import premiumToothImg from '../assets/premium-tooth.jpg';
 const ImageStory = () => {
   const englishServices = [
     'Preventive Dental Care',
-    'Restorative Dentistry',
-    'Cosmetic Dentistry',
+    'Comfort-Focused RCT & Restorations',
+    'Smile Enhancement',
     'Orthodontic Care',
-    "Children's Dentistry"
+    'Growing Healthy Smiles Together'
   ];
 
   return (
@@ -85,7 +85,7 @@ const ImageStory = () => {
             Healthy, Confident Smiles.
           </h3>
           <p style={{ color: 'var(--color-text-main)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1rem' }}>
-            We are committed to providing top-quality dental care in Alappuzha that combines clinical expertise with genuine personal attention. Whether you need a routine check-up, root canal treatment, or cosmetic guidance, we recommend care that is appropriate for you.
+            We are committed to providing dependable dental care in Alappuzha that combines clinical expertise with genuine personal attention. Whether you need a routine check-up, Comfort-Focused RCT, or smile enhancement, we recommend care that is appropriate for you.
           </p>
           <p style={{ color: 'var(--color-primary)', fontWeight: 700, fontSize: '0.95rem' }}>
             Your comfort matters. Your concerns matter. Your smile matters.
