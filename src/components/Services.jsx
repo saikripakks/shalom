@@ -15,7 +15,7 @@ const Services = () => {
     { title: 'Restorative Treatments', desc: 'Restore damaged or decayed teeth with root canals, dental implants, crowns, and fillings designed to improve health and function.', img: restImg, link: '/root-canal-treatment-alappuzha' },
     { title: 'Cosmetic Dentistry', desc: 'Enhance the appearance of your smile with personalized teeth whitening, aesthetic bonding, and veneers to smile with confidence.', img: cosImg, link: '/teeth-whitening-alappuzha' },
     { title: 'Orthodontic Solutions', desc: 'Improve the alignment of your teeth and correct bite problems with modern braces and orthodontic treatment options.', img: orthoImg, link: '/braces-orthodontics-alappuzha' },
-    { title: 'Child Dental Care', desc: 'Gentle and friendly dental care for children, helping them develop healthy oral habits and a positive relationship with dentistry from an early age.', img: childImg, link: '/child-dentist-alappuzha' }
+    { title: 'Child Dental Care', desc: 'Growing healthy smiles together.', img: childImg, link: '/child-dentist-alappuzha' }
   ];
 
   return (
@@ -38,7 +38,7 @@ const Services = () => {
             Complete Dental Care for Your Smile in Alappuzha
           </h2>
           <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', maxWidth: '800px', margin: '0 auto' }}>
-            From preventive check-ups and painless root canals to restorative implants and cosmetic teeth whitening, our Alappuzha dental clinic offers comprehensive dental care for children and adults in a highly comfortable environment.
+            From preventive check-ups and comfort-focused root canal treatment to restorative implants and cosmetic teeth whitening, our Alappuzha dental clinic offers comprehensive dental care for children and adults in a highly comfortable environment.
           </p>
         </div>
 

@@ -71,12 +71,12 @@ const Hero = () => {
                 <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent/60 motion-reduce:animate-none" />
                 <span className="relative inline-flex size-2 rounded-full bg-accent" />
               </span>
-              Gentle, family-first dental care
+              Care for every smile
               <Sparkles size={14} className="text-accent motion-safe:animate-pulse" />
             </div>
 
             <p className="hero-subtitle" style={{ color: '#4A8BB5', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '1.2rem' }}>
-              BEST DENTAL CLINIC IN ALAPPUZHA FOR EVERY SMILE
+              BEST DENTAL CLINIC IN ALAPPUZHA
             </p>
             
             <h1 className="hero-title" style={{ color: '#113254', lineHeight: 1, marginBottom: '1.5rem', display: 'flex', flexDirection: 'column' }}>

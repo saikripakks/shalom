@@ -25,7 +25,7 @@ const RootCanal = () => {
             Root Canal Treatment in Alappuzha
           </h1>
           <p style={{ fontSize: '1.1rem', opacity: 0.85, maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
-            Painless, effective root canal treatment at Shalom House of Dental Care.
+            Comfort-focused root canal treatment at Shalom House of Dental Care.
           </p>
           <a
             href="tel:+918606709290"
