@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import RootCanal from './pages/RootCanal';
 import DentalImplants from './pages/DentalImplants';
 import TeethWhitening from './pages/TeethWhitening';
+import SmileEnhancement from './pages/SmileEnhancement';
 import BracesOrthodontics from './pages/BracesOrthodontics';
 import ChildDentist from './pages/ChildDentist';
 import DentalCheckup from './pages/DentalCheckup';
@@ -33,6 +34,7 @@ function App() {
           <Route path="/root-canal-treatment-alappuzha" element={<RootCanal />} />
           <Route path="/dental-implants-alappuzha" element={<DentalImplants />} />
           <Route path="/teeth-whitening-alappuzha" element={<TeethWhitening />} />
+          <Route path="/smile-enhancement-alappuzha" element={<SmileEnhancement />} />
           <Route path="/braces-orthodontics-alappuzha" element={<BracesOrthodontics />} />
           <Route path="/child-dentist-alappuzha" element={<ChildDentist />} />
           <Route path="/dental-checkup-cleaning-alappuzha" element={<DentalCheckup />} />

@@ -13,7 +13,7 @@ const Services = () => {
   const services = [
     { title: 'Preventive Care', desc: 'Protect your smile before problems begin with regular dental check-ups, professional cleaning, and comprehensive examinations.', img: prevImg, link: '/dental-checkup-cleaning-alappuzha' },
     { title: 'Restorative Care', desc: 'Restore damaged or decayed teeth with Comfort-Focused RCT, dental implants, crowns, and tooth-coloured fillings.', img: restImg, link: '/root-canal-treatment-alappuzha' },
-    { title: 'Smile Enhancement', desc: 'Smile enhancement using aesthetic bonding, veneers, and teeth whitening.', img: cosImg, link: '/teeth-whitening-alappuzha' },
+    { title: 'Smile Enhancement', desc: "We tailor a combination of treatments such as veneers, composite bonding, orthodontics, gum contouring, or whitening to improve your smile's colour, shape, alignment, and balance.", img: cosImg, link: '/smile-enhancement-alappuzha' },
     { title: 'Orthodontic Solutions', desc: 'Improve the alignment of your teeth and correct bite problems with modern braces and orthodontic treatment options.', img: orthoImg, link: '/braces-orthodontics-alappuzha' },
     { title: 'Pediatric Dentistry', desc: 'Growing Healthy Smiles Together.', img: childImg, link: '/child-dentist-alappuzha' }
   ];
